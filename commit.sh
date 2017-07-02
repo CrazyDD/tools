@@ -4,8 +4,9 @@ npm run build
 cd ..
 cp -r project-tools/dist .
 mv dist/* .
-rm -rf dist index.html-e
+rm -rf dist
 sed -i -e 's|/static|/tools/static|g' index.html
+rm -rf index.html-e
 git add .
 git commit -m "new build"
 git push
