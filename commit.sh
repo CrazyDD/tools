@@ -1,5 +1,7 @@
 rm -rf static index.html
+cd project-tools
 npm run build
+cd ..
 cp -r project-tools/dist .
 mv dist/* .
 rm -rf dist
